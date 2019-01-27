@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Rock-Paper-Scissors Game</title>
+   <link rel = "stylesheet" href = "styles.css"/>
+ </head>
+ <body>
+   <header>
+     <h1>Rock-Paper-Scissors</h1>
+   </header>
+
+   <div class="score-board">
+     <span role="image" aria-label="person" id = "emoji1" >🙋‍‍</span>
+     <span role="image" aria-label="computer" id="emoji2">💻</span>
+     <div id = "user-label" class="badge">User</div>
+     <div id = "computer-label" class="badge">Comp</div>               <!--Here, div is a block-level element -->
+     <span id="user-score">0</span>:<span id="computer-score">0</span>     <!-- Here, we are using span as span is a inline element -->
+   </div>
+
+  <div class="result">
+     <p>Paper Covers Rock. You Win!!</p>
+   </div>
+
+   <div class="choices">
+     <div class="choice" id="r">
+      <img src="images/rock.png" alt="rock"/>
+     </div>
+     <div class="choice" id="p">
+       <img src="images/paper.png" alt="Paper"/>
+     </div>
+     <div class="choice" id="s">
+        <img src="images/scissors.png" alt="Scissors"/>
+     </div>
+   </div>
+
+   <p id="action-message">Make Your Move.</p>
+   <script src="app.js" charset="utf-8"></script>
+</body>
+ </html>
